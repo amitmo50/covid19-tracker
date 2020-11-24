@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  background-color: rgb(250, 250,250);
+}
+
+.covid19Img{
+  width: 370px;
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 770px) {
+  .App {
+    margin: 0 10%;
+  }
+
+  .covid19Img {
+    width: 100%;
+  }
+}
