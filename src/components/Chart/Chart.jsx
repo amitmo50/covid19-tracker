@@ -5,11 +5,12 @@ import styles from './Chart.module.css';
  
 const Chart = ({data:{confirmed, recovered, deaths}, country}) => {
     const [dailyData, setDailyData] = useState([]);
-    const getData = async () =>{
-        const data = await fetchDailyData();
-        setDailyData(data);
-    }
+   
     useEffect(() => {
+        const getData = async () =>{
+            const data = await fetchDailyData();
+            setDailyData(data);
+        }
         getData();
     }, []);
 

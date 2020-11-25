@@ -15,6 +15,7 @@ export const fetchData = async (country) => {
             deaths,
             lastUpdate
         };
+        
         return modifiedData;
 
     }catch(error){
@@ -31,6 +32,7 @@ export const fetchDailyData = async () => {
             deaths: dailyData.deaths.total,
             date: dailyData.reportDate
         }));
+        console.log(data)
         return modifiedData;
     }catch(error){
         console.log(error);
